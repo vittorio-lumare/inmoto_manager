@@ -14,40 +14,111 @@
    <string>InMotoManager</string>
   </property>
   <widget class="QWidget" name="centralWidget">
-   <widget class="QPushButton" name="off_btn">
+   <widget class="QGroupBox" name="system_gbox">
     <property name="geometry">
      <rect>
-      <x>240</x>
-      <y>10</y>
+      <x>30</x>
+      <y>0</y>
+      <width>341</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>System</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <widget class="QPushButton" name="on_btn">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>40</y>
+       <width>89</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>ON</string>
+     </property>
+    </widget>
+    <widget class="QLed" name="power_led" native="true">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>30</y>
+       <width>41</width>
+       <height>41</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="off_btn">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>40</y>
+       <width>89</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>OFF</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="exercise_gbox">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>90</y>
+      <width>341</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Esercizio</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <widget class="QPushButton" name="start_exercise_btn">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>131</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Inizia Esercizio</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="stop_exercise_btn">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>30</y>
+       <width>131</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Finisci Esercizio</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>190</y>
       <width>89</width>
       <height>25</height>
      </rect>
     </property>
     <property name="text">
-     <string>OFF</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="on_btn">
-    <property name="geometry">
-     <rect>
-      <x>70</x>
-      <y>10</y>
-      <width>89</width>
-      <height>25</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>ON</string>
-    </property>
-   </widget>
-   <widget class="QLed" name="power_led" native="true">
-    <property name="geometry">
-     <rect>
-      <x>180</x>
-      <y>10</y>
-      <width>41</width>
-      <height>41</height>
-     </rect>
+     <string>PushButton</string>
     </property>
    </widget>
   </widget>
